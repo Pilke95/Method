@@ -1,0 +1,39 @@
+.home {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705)) ,url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll, fixed;
+    text-align: center;
+
+    
+    &__text {
+        margin-top: 29vh;
+
+        @include md {
+            margin-top: 10rem;
+        }
+    }
+
+    &__sub {
+        color: $grey;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+
+        @include md {
+            font-size: .8rem;
+        }
+        
+    }
+
+    &__heading {
+        font-size: 5rem;
+        font-weight: 400;
+        color: $white;
+
+        @include md {
+            font-size: 3.3rem;
+        }
+    }
+}

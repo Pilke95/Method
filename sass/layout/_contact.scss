@@ -1,0 +1,99 @@
+.contact-section {
+    @include page();
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    padding: 3rem 1.5rem;
+
+    @include sm {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include sm {
+            margin: 1.5rem 0;
+        }
+    }
+
+    &__heading {
+        font-size: 1.8rem;
+        color: $white;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-bottom: 1.2rem;
+    }
+
+    &__email {
+        color: $grey;
+        cursor: pointer;
+        margin-top: .5rem;
+    }
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 3rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 500px;
+    margin: 2.5rem 0 4rem;
+
+    @include md {
+        width: 350px;
+    }
+
+    &__field {
+        color: $white;
+        font-size: .9rem;
+    }
+
+    &__input {
+        background-color: $grey;
+        opacity: .5;
+        padding: .5rem;
+        margin-top: .5rem;
+        margin-bottom: 1.5rem;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+
+        &:focus {
+            outline: 2px solid $yellow;
+            outline-offset: 2px;
+        }
+    }
+
+    &__text {
+        background-color: $grey;
+        opacity: .5;
+        padding: .5rem;
+        min-height: 5rem;
+        margin-top: .5rem;
+        margin-bottom: 1.5rem;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+
+        &:focus {
+            outline: 2px solid $yellow;
+            outline-offset: 2px;
+        }
+    }
+}

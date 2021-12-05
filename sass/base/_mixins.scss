@@ -1,0 +1,8 @@
+@mixin page () {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705)) ,url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll, fixed;
+    text-align: center;
+}

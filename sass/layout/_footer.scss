@@ -1,0 +1,31 @@
+.footer {
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+    
+
+    &__text {
+        color: $grey;
+        font-size: 1rem;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+
+    &__link {
+        margin: .5rem;
+    }
+
+    &__icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: $grey;
+        transition: all .3s ease;
+
+        &:hover {
+            transform: scale(1.5);
+            fill: $white;
+        }
+    }
+}

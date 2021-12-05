@@ -1,0 +1,7 @@
+.band {
+    @include page();
+
+    &__info {
+        margin-bottom: 10.5rem;
+    }
+}

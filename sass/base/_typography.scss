@@ -1,0 +1,21 @@
+.heading {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2.7rem;
+    margin: 5rem 0;
+}
+
+.subheading {
+    font-size: .8rem;
+    color: $grey;
+    text-transform: uppercase;
+    margin: .5rem 0;
+}
+
+.p {
+    color: $white;
+    font-size: .9rem;
+    text-align: left;
+    line-height: 1.6;
+}

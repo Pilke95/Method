@@ -1,0 +1,79 @@
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    font-size: 1rem;
+    color: $yellow;
+    display: inline-block;
+    border: 1px solid $yellow;
+    padding: .7rem 1.5rem;
+    margin: .5rem;
+    transition: all .4s ease;
+    animation: popup .5s ease-out .75s;
+    animation-fill-mode: backwards;
+
+
+    &:hover {
+        color: $white;
+        border-color: $white;
+        transform: scale(1.1);
+    }
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+    text-decoration: none;
+    font-size: .8rem;
+    color: $yellow;
+    display: inline-block;
+    border: 1px solid $yellow;
+    transition: all .4s ease;
+    padding: .4rem 1rem;
+
+    &:hover {
+        color: $white;
+        border-color: $white;
+    }
+}
+
+.submit {
+    background-color: rgba(221, 219, 85, 0.589);
+    padding: .7rem;
+    color: $white;
+    font-size: .9rem;
+    cursor: pointer;
+    border: 2px solid $yellow;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 1.25rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+
+    @include md {
+        display: flex;
+    }
+
+    &__bar {
+        height: 3px;
+        width: 100%;
+        background-color: $white;
+        border-radius: 5px;
+    }
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

@@ -1,0 +1,53 @@
+.music {
+    @include page();
+
+    &__intro {
+        display: flex;
+        align-items: center;
+        
+        @include md {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        text-align: left;
+
+        @include md {
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+
+    &__img {
+        width: 218px;
+        height: 218px;
+        margin: 0 4.5rem;
+    }
+
+    &__sub {
+        color: $grey;
+        font-family: 300;
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+
+    &__heading {
+        color: $white;
+        font-size: 1.5rem;
+        margin: .8rem 0;
+    }
+
+    &__albums {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        margin: 7rem 0;
+
+        @include md {
+            grid-template-columns: 1fr;
+            margin-top: 4.5rem;
+        }
+    }
+
+}
